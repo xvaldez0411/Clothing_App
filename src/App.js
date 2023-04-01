@@ -13,7 +13,7 @@ const App = () => {
       <Route path='/' element={<Navigation />}>
         {/* added index makes the HOME component a direct child of the "/" path  */}
         <Route index element={<Home />} />
-        <Route path='shop' element={<Shop/>} />
+        <Route path='shop/*' element={<Shop/>} />
         <Route path='auth' element={<Authentication/>} />
         <Route path='checkout' element={<Checkout/>} />
       </Route>
